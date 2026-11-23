@@ -1,0 +1,18 @@
+{
+  "name": "pi-arc-history-cap",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Keeps the undo history of pi-workspace-history under 5 GB: deletes whole project histories, least recently used first, never one used in the last day.",
+  "keywords": [
+    "pi-package"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./history-cap.ts"
+    ]
+  }
+}
